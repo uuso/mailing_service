@@ -17,7 +17,7 @@ else:
 
 envs = list(
     map(str.upper, 
-    ['from', 'to', 'username', 'password', 'server', 'port', 'ssl', 'attachfolder', 'delaym']))
+    ['from', 'to', 'username', 'password', 'server', 'port', 'ssl', 'attachfolder', 'delay']))
 
 
 mailcfg = { env:os.getenv(f'MAIL_{env}') for env in envs}

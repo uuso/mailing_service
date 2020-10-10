@@ -141,7 +141,7 @@ def mailing_process():
 if __name__ == "__main__":
     import time
     while True:
-        time.sleep(int(mailcfg['DELAYM'])*10)
+        time.sleep(int(mailcfg['DELAY']))
         logger.debug('Проверка наличия файлов для отправки...')
         if len(items_in_folder(mailcfg['ATTACHFOLDER'])):
             logger.debug('Найдены файлы в папке рассылки:')
