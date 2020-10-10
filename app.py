@@ -142,7 +142,7 @@ if __name__ == "__main__":
     import time
     while True:
         time.sleep(int(mailcfg['DELAY']))
-        logger.debug('Проверка наличия файлов для отправки...')
+        print(datetime.now().isoformat() + '\t\tПроверка наличия файлов для отправки...')
         if len(items_in_folder(mailcfg['ATTACHFOLDER'])):
             logger.debug('Найдены файлы в папке рассылки:')
             for a in items_in_folder(mailcfg['ATTACHFOLDER']):
